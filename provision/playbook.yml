@@ -1,0 +1,8 @@
+---
+- name: LocalStackを構築する
+  hosts: all
+  become: true
+  roles:
+    - docker-for-ami
+    - docker-compose
+    - git
